@@ -1,7 +1,6 @@
 const { Schema, model } = require('mongoose')
 
 const customerOrder = new Schema({
-    
     customerId : {
         type : Schema.ObjectId,
         required : true

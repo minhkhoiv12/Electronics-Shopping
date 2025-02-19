@@ -28,4 +28,5 @@ function App() {
 
     return <Router allRoutes={allRoutes} /> 
 }
+
 export default App;

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { active_stripe_connect_account, messageClear } from '../store/Reducers/sellerReducer';
@@ -28,7 +27,6 @@ const Success = () => {
     }
 
     return (
-       
         <div className='w-screen h-screen flex justify-center items-center flex-col gap-4'>
             {
                 loader ? <FadeLoader/> : errorMessage ? <>
@@ -44,4 +42,5 @@ const Success = () => {
         </div>
     );
 };
+
 export default Success;

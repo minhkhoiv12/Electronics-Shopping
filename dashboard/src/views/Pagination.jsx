@@ -3,8 +3,10 @@ import { MdOutlineKeyboardDoubleArrowLeft,MdOutlineKeyboardDoubleArrowRight } fr
 
 
 const Pagination = ({pageNumber,setPageNumber,totalItem,parPage,showItem}) => {
+
     let totalPage = Math.ceil(totalItem / parPage)
     let startPage = pageNumber
+
     let dif = totalPage - pageNumber
     if (dif <= showItem) {
         startPage = totalPage - showItem
@@ -14,7 +16,9 @@ const Pagination = ({pageNumber,setPageNumber,totalItem,parPage,showItem}) => {
     if (startPage <= 0) {
         startPage = 1
     }
+
     const createBtn = () => {
+
         const btns = []
         for (let i = startPage; i < endPage; i++) {
             btns.push(
@@ -25,13 +29,13 @@ const Pagination = ({pageNumber,setPageNumber,totalItem,parPage,showItem}) => {
         }
         return btns
     }
+
     return (
         <ul className='flex gap-3'>
             {
                 pageNumber > 1 && <li onClick={() => setPageNumber(pageNumber - 1)} className='w-[33px] h-[33px] rounded-full flex justify-center items-center bg-slate-300 text-[#000000] cursor-pointer'>
                     <MdOutlineKeyboardDoubleArrowLeft />
                 </li>
-           
             }
             {
                 createBtn()
@@ -44,5 +48,8 @@ const Pagination = ({pageNumber,setPageNumber,totalItem,parPage,showItem}) => {
 
         </ul>
     )
+
+
 };
+
 export default Pagination;

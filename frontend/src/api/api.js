@@ -1,8 +1,17 @@
 import axios from "axios";
-const local = 'http://localhost:5000'
-const production = ''
-const api = axios.create({
-    baseURL : `${local}/api`
-})
+const local = "http://localhost:5000";
+const production = "https://myshopapi-lmwm.onrender.com";
 
-export default api
+let api_url = "";
+let mode = "pro";
+if (mode === "pro") {
+  api_url = production;
+} else {
+  api_url = local;
+}
+const api = axios.create({
+  baseURL: `${api_url}/api`,
+  withCredentials: true,
+});
+
+export default api;

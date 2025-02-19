@@ -4,7 +4,6 @@ const Register = lazy(()=> import('../../views/auth/Register'))
 const AdminLogin = lazy(()=> import('../../views/auth/AdminLogin')) 
 const Home = lazy(()=> import('../../views/Home'))   
 const UnAuthorized = lazy(()=> import('../../views/UnAuthorized'))   
-
 const Success = lazy(()=> import('../../views/Success'))   
 
 const publicRoutes = [

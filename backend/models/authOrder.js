@@ -1,4 +1,5 @@
 const {Schema, model} = require("mongoose");
+
 const authSchema = new Schema({
     orderId: {
         type: Schema.ObjectId,
@@ -33,4 +34,5 @@ const authSchema = new Schema({
         required : true
     } 
 },{ timestamps: true })
+
 module.exports = model('authorOrders',authSchema)

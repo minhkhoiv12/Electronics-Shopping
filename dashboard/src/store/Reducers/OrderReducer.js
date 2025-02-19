@@ -14,6 +14,7 @@ export const get_admin_orders = createAsyncThunk(
         }
     }
 )
+
   // End Method  
  
   export const get_admin_order = createAsyncThunk(
@@ -28,6 +29,7 @@ export const get_admin_orders = createAsyncThunk(
     }
 ) 
   // End Method  
+
   export const admin_order_status_update = createAsyncThunk(
     'orders/admin_order_status_update',
     async( {orderId,info} ,{rejectWithValue, fulfillWithValue}) => { 
@@ -40,6 +42,7 @@ export const get_admin_orders = createAsyncThunk(
     }
 ) 
   // End Method  
+
   export const get_seller_orders = createAsyncThunk(
     'orders/get_seller_orders',
     async({ parPage,page,searchValue,sellerId },{rejectWithValue, fulfillWithValue}) => { 
@@ -52,6 +55,8 @@ export const get_admin_orders = createAsyncThunk(
     }
 ) 
   // End Method 
+
+
   export const get_seller_order = createAsyncThunk(
     'orders/get_seller_order',
     async( orderId ,{rejectWithValue, fulfillWithValue}) => { 
@@ -78,7 +83,7 @@ export const get_admin_orders = createAsyncThunk(
 ) 
   // End Method  
 
-
+ 
 export const OrderReducer = createSlice({
     name: 'order',
     initialState:{
@@ -89,10 +94,12 @@ export const OrderReducer = createSlice({
         myOrders: []
     },
     reducers : {
+
         messageClear : (state,_) => {
             state.errorMessage = ""
             state.successMessage = ""
         }
+
     },
     extraReducers: (builder) => {
         builder
@@ -110,6 +117,7 @@ export const OrderReducer = createSlice({
         .addCase(admin_order_status_update.fulfilled, (state, { payload }) => {
             state.successMessage = payload.message; 
         })
+
         .addCase(get_seller_orders.fulfilled, (state, { payload }) => {
             state.myOrders = payload.orders;
             state.totalOrder = payload.totalOrder; 
@@ -118,16 +126,16 @@ export const OrderReducer = createSlice({
             state.order = payload.order; 
         })
 
-
         .addCase(seller_order_status_update.rejected, (state, { payload }) => {
             state.errorMessage = payload.message; 
         })
         .addCase(seller_order_status_update.fulfilled, (state, { payload }) => {
             state.successMessage = payload.message; 
         })
-
+ 
 
     }
+
 })
 export const {messageClear} = OrderReducer.actions
 export default OrderReducer.reducer

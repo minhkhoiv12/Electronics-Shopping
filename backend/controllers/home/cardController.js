@@ -2,6 +2,7 @@ const cardModel = require('../../models/cardModel')
 const { responseReturn } = require('../../utiles/response')
 const { mongo: {ObjectId}} = require('mongoose')
 const wishlistModel = require('../../models/wishlistModel')
+
 class cardController{
    
     add_to_card =  async(req, res) => {
@@ -20,6 +21,7 @@ class cardController{
                 }
             ]
             })
+
             if (product) {
                 responseReturn(res,404,{error: "Product Already Added To Card" })
             } else {
@@ -36,6 +38,7 @@ class cardController{
         }
     }
     // End Method 
+
     get_card_products = async(req, res) => {
        const co = 5;
        const {userId } = req.params
@@ -67,6 +70,7 @@ class cardController{
       for (let i = 0; i < stockProduct.length; i++) {
         const { quantity } = stockProduct[i]
         card_product_count = buy_product_item + quantity
+
         buy_product_item = buy_product_item + quantity
         const { price,discount } = stockProduct[i].products[0]
         if (discount !== 0) {
@@ -107,9 +111,11 @@ class cardController{
                 productInfo: tempProduct 
             }]
           } 
+
            } 
         } 
       }
+
       responseReturn(res,200,{ 
         card_products: p,
         price: calculatePrice,
@@ -125,6 +131,8 @@ class cardController{
        
     }
     // End Method 
+
+
     delete_card_products = async (req, res) => {
         const {card_id } = req.params
         try {
@@ -137,6 +145,7 @@ class cardController{
          
     }
        // End Method 
+
        quantity_inc = async (req, res) => {
         const {card_id } = req.params
         try {
@@ -151,6 +160,7 @@ class cardController{
          
     }
        // End Method 
+
        quantity_dec = async (req, res) => {
         const {card_id } = req.params
         try {
@@ -165,6 +175,8 @@ class cardController{
          
     }
        // End Method 
+
+
        add_wishlist = async (req, res) => {
         const { slug } = req.body
         try {
@@ -182,8 +194,11 @@ class cardController{
         } catch (error) {
             console.log(error.message)
         }
+
        }
        // End Method 
+
+
        get_wishlist = async (req, res) => {
         const { userId } = req.params
         try {
@@ -209,7 +224,7 @@ class cardController{
                 message: 'Wishlist Product Remove',
                 wishlistId
             })
-
+            
            } catch (error) {
             console.log(error.message)
            }

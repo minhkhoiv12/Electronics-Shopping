@@ -1,4 +1,5 @@
 const {Schema, model} = require("mongoose");
+
 const sellerSchema = new Schema({
     name: {
         type: String,

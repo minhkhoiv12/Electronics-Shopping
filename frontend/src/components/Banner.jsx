@@ -9,7 +9,7 @@ const Banner = () => {
 
     const dispatch = useDispatch()
     const {banners} = useSelector(state => state.home)
-
+ 
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
@@ -29,7 +29,6 @@ const Banner = () => {
         },
     }
 
-
     useEffect(() => {
         dispatch(get_banners())
     },[])
@@ -48,7 +47,6 @@ const Banner = () => {
                     responsive={responsive}
                 >
                 {
-                   
                    banners.length > 0 && banners.map((b, i) => <Link key={i} to={`product/details/${b.link}`}>
                         <img src={ b.banner} alt="" />
                     </Link> )
@@ -61,4 +59,5 @@ const Banner = () => {
         </div>
     );
 };
+
 export default Banner;

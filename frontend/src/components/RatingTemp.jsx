@@ -74,7 +74,7 @@ const RatingTemp = ({rating}) => {
 
 
 
-
+    
 };
 
 export default RatingTemp;

@@ -1,5 +1,6 @@
 import {configureStore} from '@reduxjs/toolkit'
 import rootReducer from './rootReducers'
+
 const store = configureStore({
 
     reducer : rootReducer,
@@ -9,7 +10,6 @@ const store = configureStore({
         })
     },
     devTools : true
-
 
 })
 export default store

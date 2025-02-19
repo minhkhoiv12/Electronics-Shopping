@@ -2,10 +2,13 @@ const formidable = require("formidable")
 const { responseReturn } = require("../../utiles/response")
 const cloudinary = require('cloudinary').v2
 const sellerModel = require('../../models/sellerModel')
+
 class sellerController{ 
+
     request_seller_get = async (req, res) => {
         const {page,searchValue, parPage} = req.query 
         const skipPage = parseInt(parPage) * (parseInt(page) - 1)
+
         try {
             if (searchValue) {
                 
@@ -19,8 +22,10 @@ class sellerController{
         }
  
     }
+
     
     // end method 
+
     get_seller = async (req, res) => {
         const {sellerId} = req.params
         try {
@@ -30,6 +35,7 @@ class sellerController{
             responseReturn(res, 500,{ error: error.message })
         }
     }
+
      // end method 
  
      seller_status_update = async (req, res) => {
@@ -42,18 +48,23 @@ class sellerController{
             responseReturn(res, 500,{ error: error.message })
         }
     }
+
      // end method 
+
      get_active_sellers = async (req, res) => {
         let {page,searchValue,parPage} = req.query
         page = parseInt(page)
         parPage= parseInt(parPage)
+
         const skipPage = parPage * (page - 1)
+
         try {
             if (searchValue) {
                 const sellers = await sellerModel.find({
                     $text: { $search: searchValue},
                     status: 'active'
                 }).skip(skipPage).limit(parPage).sort({createdAt : -1})
+
                 const totalSeller = await sellerModel.find({
                     $text: { $search: searchValue},
                     status: 'active'
@@ -62,6 +73,7 @@ class sellerController{
             } else {
                 const sellers = await sellerModel.find({ status: 'active'
                 }).skip(skipPage).limit(parPage).sort({createdAt : -1})
+
                 const totalSeller = await sellerModel.find({ status: 'active'
                 }).countDocuments()
                 responseReturn(res, 200, {totalSeller,sellers})
@@ -70,6 +82,8 @@ class sellerController{
         } catch (error) {
             console.log('active seller get ' + error.message)
         }
+
+
      }
    // end method 
 
@@ -100,7 +114,7 @@ class sellerController{
             }).countDocuments()
             responseReturn(res, 200, {totalSeller,sellers})
         }
-
+        
     } catch (error) {
         console.log('deactive seller get ' + error.message)
     }
@@ -108,5 +122,6 @@ class sellerController{
 // end method 
 
 }
+ 
 
 module.exports = new sellerController()

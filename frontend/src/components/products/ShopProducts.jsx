@@ -3,7 +3,6 @@ import { FaEye, FaRegHeart } from "react-icons/fa";
 import { RiShoppingCartLine } from "react-icons/ri";
 import Rating from '../Rating';
 
-
 const ShopProducts = ({styles,products}) => {
     return (
         <div className={`w-full grid ${styles === 'grid' ? 'grid-cols-3 md-lg:grid-cols-2 md:grid-cols-2' : 'grid-cols-1 md-lg:grid-cols-2 md:grid-cols-2'} gap-3 `}>
@@ -27,18 +26,17 @@ const ShopProducts = ({styles,products}) => {
      </div>
 
      <div className='flex justify-start items-start flex-col gap-1'>
-            
             <h2 className='font-bold'>{ p.name }</h2>
             <div className='flex justify-start items-center gap-3'>
-               
                 <span className='text-md font-semibold'>${ p.price }</span>
                 <div className='flex'>
-                   
                     <Rating ratings={p.rating} />
                 </div>
 
             </div>
         </div>    
+
+
                 </div>
                 
                 )
@@ -47,4 +45,5 @@ const ShopProducts = ({styles,products}) => {
         </div>
     );
 };
+
 export default ShopProducts;
