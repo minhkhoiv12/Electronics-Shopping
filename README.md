@@ -3,7 +3,8 @@
 ## 📌 Overview
 Welcome to the **Electronics Shopping & Ordering Website**, a modern eCommerce platform tailored for the sale and ordering of electronic devices. Built on the **MVC (Model-View-Controller) architecture**, this project follows a clean and modular structure, ensuring scalability, maintainability, and high performance. This platform seamlessly connects customers with vendors through an intuitive and secure shopping experience. From browsing products to placing orders and managing inventory, every aspect of the system is designed 
 for efficiency. Whether you are an admin, vendor, or customer, our role-based dashboards provide personalized access to the necessary functionalities.
-
+😊 I am pleased to present my thesis project, which demonstrates my ability to develop. This project reflects my technical skills, problem-solving abilities, and commitment to delivering high-quality solutions.😊
+[My essay](https://drive.google.com/drive/folders/19RC_xY3HdxMmHLeJPO2ByDf0rXoQuzgW?usp=sharing)
 ## 🚀 Features
 - **Protected Routes with Middleware**
 - **Live Chat Feature (User-Vendor, Vendor-Admin)**
@@ -152,8 +153,6 @@ If you encounter any issues, check the following:
 - Check MongoDB connection in your `.env` file.
 - Review console logs for any dependency errors.
 
-😊 I am pleased to present my thesis project, which demonstrates my ability to develop. This project reflects my technical skills, problem-solving abilities, and commitment to delivering high-quality solutions.😊
-[My essay](https://drive.google.com/drive/folders/19RC_xY3HdxMmHLeJPO2ByDf0rXoQuzgW?usp=sharing)
 
 ---
 ### ⚡️ Revolutionizing Electronics Shopping Experience! 🛍️🔋
