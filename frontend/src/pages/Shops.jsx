@@ -321,7 +321,7 @@ const Shops = () => {
               </div>
 
               <div className="py-5 flex flex-col gap-4 md:hidden">
-                <Products title="Latest Product" products={latest_product} />
+                <Products title="Sản phẩm mới nhất" products={latest_product} />
               </div>
             </div>
 

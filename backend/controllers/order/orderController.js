@@ -86,7 +86,7 @@ class orderController {
           products: storePor,
           price: pri,
           payment_status: "unpaid",
-          shippingInfo: "Easy Main Warehouse",
+          shippingInfo: "Khoi Warehouse",
           delivery_status: "pending",
           date: tempDate,
         });
@@ -102,7 +102,7 @@ class orderController {
       }, 15000);
 
       responseReturn(res, 200, {
-        message: "Order Placed Success",
+        message: "Đặt hàng thành công",
         orderId: order.id,
       });
     } catch (error) {
@@ -273,7 +273,9 @@ class orderController {
       await customerOrder.findByIdAndUpdate(orderId, {
         delivery_status: status,
       });
-      responseReturn(res, 200, { message: "order Status change success" });
+      responseReturn(res, 200, {
+        message: "đơn hàng Thay đổi trạng thái thành công",
+      });
     } catch (error) {
       console.log("get admin status error" + error.message);
       responseReturn(res, 500, { message: "internal server error" });
@@ -334,7 +336,7 @@ class orderController {
         delivery_status: status,
       });
       responseReturn(res, 200, {
-        message: "order status updated successfully",
+        message: "trạng thái đơn hàng đã được cập nhật thành công",
       });
     } catch (error) {
       console.log("get seller Order error" + error.message);

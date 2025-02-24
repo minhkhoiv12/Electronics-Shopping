@@ -11,7 +11,7 @@ class customerAuthController {
     try {
       const customer = await customerModel.findOne({ email });
       if (customer) {
-        responseReturn(res, 404, { error: "Email Already Exits" });
+        responseReturn(res, 404, { error: "Email đã tồn tại" });
       } else {
         const createCustomer = await customerModel.create({
           name: name.trim(),
@@ -31,7 +31,10 @@ class customerAuthController {
         res.cookie("customerToken", token, {
           expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
         });
-        responseReturn(res, 201, { message: "User Register Success", token });
+        responseReturn(res, 201, {
+          message: "Người dùng đăng ký thành công",
+          token,
+        });
       }
     } catch (error) {
       console.log(error.message);
@@ -57,12 +60,15 @@ class customerAuthController {
           res.cookie("customerToken", token, {
             expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
           });
-          responseReturn(res, 201, { message: "User Login Success", token });
+          responseReturn(res, 201, {
+            message: "Người dùng đăng nhập thành công",
+            token,
+          });
         } else {
-          responseReturn(res, 404, { error: "Password Wrong" });
+          responseReturn(res, 404, { error: "Sai mật khẩu" });
         }
       } else {
-        responseReturn(res, 404, { error: "Email Not Found" });
+        responseReturn(res, 404, { error: "Không tìm thấy email" });
       }
     } catch (error) {
       console.log(error.message);
@@ -74,7 +80,7 @@ class customerAuthController {
     res.cookie("customerToken", "", {
       expires: new Date(Date.now()),
     });
-    responseReturn(res, 200, { message: "Logout Success" });
+    responseReturn(res, 200, { message: "Đăng xuất thành công" });
   };
   // End Method
 }

@@ -131,16 +131,16 @@ const Category = () => {
                 <thead className="text-sm text-[#d0d2d6] uppercase border-b border-slate-700">
                   <tr>
                     <th scope="col" className="py-3 px-4">
-                      No
+                      STT
                     </th>
                     <th scope="col" className="py-3 px-4">
-                      Image
+                      Hình ảnh
                     </th>
                     <th scope="col" className="py-3 px-4">
-                      Name
+                      Tên
                     </th>
                     <th scope="col" className="py-3 px-4">
-                      Action
+                      Hành động
                     </th>
                   </tr>
                 </thead>

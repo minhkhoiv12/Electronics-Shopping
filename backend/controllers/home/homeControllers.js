@@ -212,7 +212,7 @@ class homeControllers {
         rating: productRating,
       });
       responseReturn(res, 201, {
-        message: "Review Added Successfully",
+        message: "Đánh giá đã được thêm thành công",
       });
     } catch (error) {
       console.log(error.message);

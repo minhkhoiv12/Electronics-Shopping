@@ -76,9 +76,9 @@ class paymentController {
         await sellerModel.findByIdAndUpdate(id, {
           payment: "active",
         });
-        responseReturn(res, 200, { message: "payment Active" });
+        responseReturn(res, 200, { message: "thanh toán hoạt động" });
       } else {
-        responseReturn(res, 404, { message: "payment Active Fails" });
+        responseReturn(res, 404, { message: "thanh toán thất bại" });
       }
     } catch (error) {
       responseReturn(res, 500, { message: "Internal Server Error" });
@@ -164,7 +164,7 @@ class paymentController {
       });
       responseReturn(res, 200, {
         withdrowal,
-        message: "Withdrowal Request Send",
+        message: "Gửi yêu cầu rút tiền",
       });
     } catch (error) {
       responseReturn(res, 500, { message: "Internal Server Error" });
@@ -199,7 +199,10 @@ class paymentController {
       });
 
       await withdrowRequest.findByIdAndUpdate(paymentId, { status: "success" });
-      responseReturn(res, 200, { payment, message: "Request Confirm Success" });
+      responseReturn(res, 200, {
+        payment,
+        message: "Yêu cầu Xác nhận Thành công",
+      });
     } catch (error) {
       responseReturn(res, 500, { message: "Internal Server Error" });
     }

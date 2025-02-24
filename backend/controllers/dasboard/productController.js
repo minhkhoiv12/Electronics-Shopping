@@ -152,7 +152,7 @@ class productController {
       const product = await productModel.findById(productId);
       responseReturn(res, 200, {
         product,
-        message: "Product Updated Successfully",
+        message: "Sửa sản phẩm thành công",
       });
     } catch (error) {
       responseReturn(res, 500, { error: error.message });
@@ -192,10 +192,10 @@ class productController {
             const product = await productModel.findById(productId);
             responseReturn(res, 200, {
               product,
-              message: "Product Image Updated Successfully",
+              message: "Sửa ảnh thành công",
             });
           } else {
-            responseReturn(res, 404, { error: "Image Upload Failed" });
+            responseReturn(res, 404, { error: "Tải ảnh thất bại" });
           }
         } catch (error) {
           responseReturn(res, 404, { error: error.message });

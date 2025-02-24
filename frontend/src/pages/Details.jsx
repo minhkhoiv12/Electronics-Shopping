@@ -250,7 +250,7 @@ const Details = () => {
               <div className="text-2xl text-red-500 font-bold flex gap-3">
                 {product.discount !== 0 ? (
                   <>
-                    Price : <h2 className="line-through">${product.price}</h2>
+                    Giá : <h2 className="line-through">${product.price}</h2>
                     <h2>
                       $
                       {product.price -

@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
 const Deactive = () => {
-    return (
-        <div>
-            deactive
-        </div>
-    );
+  return (
+    <div>
+      Tài khoản đang bị vô hiệu hoá vui lòng liên hệ với quản trị viên để kích
+      hoạt tài khoản
+    </div>
+  );
 };
 
 export default Deactive;

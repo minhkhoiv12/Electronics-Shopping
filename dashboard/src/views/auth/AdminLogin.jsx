@@ -90,7 +90,7 @@ const AdminLogin = () => {
               {loader ? (
                 <PropagateLoader color="#fff" cssOverride={overrideStyle} />
               ) : (
-                "Login"
+                "Đăng nhập"
               )}
             </button>
           </form>

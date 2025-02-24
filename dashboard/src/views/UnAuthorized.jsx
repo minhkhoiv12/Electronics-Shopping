@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const UnAuthorized = () => {
-    return (
-        <div>
-            <h1>Unauthorized Page</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Trang không được phép truy cập</h1>
+    </div>
+  );
 };
 
 export default UnAuthorized;
