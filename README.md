@@ -2,7 +2,7 @@
 
 Welcome to the **E-commerce Management Platform** 😊, a modern solution designed to simplify online business operations. Built with a **clean and scalable architecture**, this project ensures **efficiency, maintainability, and reliability**.
 
-It provides an intuitive dashboard that **connects buyers and sellers seamlessly**, supporting **smooth transactions and transparent management**. This project reflects my **technical skills, problem-solving mindset**, and dedication to delivering **practical, high-quality solutions** .
+It provides an intuitive dashboard that **connects buyers and sellers seamlessly**, supporting **smooth transactions and transparent management**. This project reflects my **technical skills, problem-solving mindset**, and dedication to delivering **practical, high-quality solutions**.
 
 ---
 
