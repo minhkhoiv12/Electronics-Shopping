@@ -57,5 +57,22 @@ Welcome to the E-commerce Management Platform 😊, a modern solution designed t
 ### Earnings Page:
 ![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/vendor/doanh%20thu.png)
 
+-Admin Web management
+
+### Vendor Management Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/admin/qu%E1%BA%A3n%20l%C3%BD%20ng%C6%B0%E1%BB%9Di%20b%C3%A1n.png)
+
+### Buyer Management Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/admin/qu%E1%BA%A3n%20l%C3%BD%20ng%C6%B0%E1%BB%9Di%20mua.png)
+
+### Order Management Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/admin/qu%E1%BA%A3n%20l%C3%BD%20%C4%91%C6%A1n%20h%C3%A0ng.png)
+
+### Category Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/admin/qu%E1%BA%A3n%20l%C3%BD%20danh%20m%E1%BB%A5c.png)
+
+### Subcategory Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/admin/qu%E1%BA%A3n%20l%C3%BD%20danh%20m%E1%BB%A5c%20con.png)
+
 ---
 ### ⚡️ Revolutionizing Electronics Shopping Experience! 🛍️🔋
