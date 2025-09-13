@@ -2,7 +2,7 @@
 
 Welcome to the **E-commerce Management Platform** 😊, a modern solution designed to simplify online business operations. Built with a **clean and scalable architecture**, this project ensures **efficiency, maintainability, and reliability**.
 
-It provides an intuitive dashboard that **connects buyers and sellers seamlessly** 🤝, supporting **smooth transactions and transparent management**. This project reflects my **technical skills, problem-solving mindset**, and dedication to delivering **practical, high-quality solutions** 🚀.
+It provides an intuitive dashboard that **connects buyers and sellers seamlessly**, supporting **smooth transactions and transparent management**. This project reflects my **technical skills, problem-solving mindset**, and dedication to delivering **practical, high-quality solutions** .
 
 ---
 
@@ -96,6 +96,4 @@ It provides an intuitive dashboard that **connects buyers and sellers seamlessly
 ![Category](https://github.com/minhkhoiv12/Media-Backend/blob/main/admin/qu%E1%BA%A3n%20l%C3%BD%20danh%20m%E1%BB%A5c.png)  
 ![Subcategory](https://github.com/minhkhoiv12/Media-Backend/blob/main/admin/qu%E1%BA%A3n%20l%C3%BD%20danh%20m%E1%BB%A5c%20con.png)
 
----
 
-### ⚡ Revolutionizing Electronics Shopping Experience! 🛍️🔋
