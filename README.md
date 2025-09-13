@@ -11,21 +11,51 @@ Welcome to the E-commerce Management Platform 😊, a modern solution designed t
 - **Stock Management for Out-of-Stock Products**
 - **Cloudinary Integration for Image Uploads**
 ## Screenshots:
+- Customer
+### Login Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/khach%20hang/login.png)
 
-### Product Details Page:
-![Alt text](https://res.cloudinary.com/dd7fcqtnn/image/upload/v1739954313/product_details_vwikci.png)
+### Register Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/khach%20hang/dang%20ky.png)
+
+### Home Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/khach%20hang/trang%20ch%E1%BB%A7.png)
 
 ### Card Page:
-![Alt text](https://res.cloudinary.com/dd7fcqtnn/image/upload/v1739955077/product_card_rcszh0.png)
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/khach%20hang/Gi%E1%BB%8F%20h%C3%A0ng.png)
 
-### Payment Page:
-![Alt text](https://res.cloudinary.com/dd7fcqtnn/image/upload/v1739955075/payment_Page_nzkglt.png)
-### 6. Troubleshooting
-If you encounter any issues, check the following:
-- Ensure Node.js is installed (`node -v` to verify).
-- Check MongoDB connection in your `.env` file.
-- Review console logs for any dependency errors.
+### Category Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/khach%20hang/Ph%C3%A2n%20lo%E1%BA%A1i%20danh%20m%E1%BB%A5c.png)
 
+### Checkout Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/khach%20hang/Thanh%20to%C3%A1n.png)
+
+### Category sorting Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/khach%20hang/T%C3%ACm%20ki%E1%BA%BFm%20theo%20lo%E1%BA%A1i%20s%E1%BA%A3n%20ph%E1%BA%A9m.png)
+
+### Product Details Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/khach%20hang/chi%20ti%E1%BA%BFt%20s%E1%BA%A3n%20ph%E1%BA%A9m.png)
+
+### Shipping Address Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/khach%20hang/v%E1%BA%ADn%20chuy%E1%BB%83n.png)
+
+### Wishlist Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/khach%20hang/y%C3%AAu%20th%C3%ADch.png)
+
+### Logout Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/khach%20hang/dang%20xuat.png)
+- Vendor
+### Order Details Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/vendor/chi%20ti%E1%BA%BFt%20%C4%91%C6%A1n%20h%C3%A0ng.png)
+
+### Order Management Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/vendor/quan%20ly%20%C4%91%C6%A1n%20h%C3%A0ng.png)
+
+### Upload Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/vendor/upload.png)
+
+### Earnings Page:
+![Alt text](https://github.com/minhkhoiv12/Media-Backend/blob/main/vendor/doanh%20thu.png)
 
 ---
 ### ⚡️ Revolutionizing Electronics Shopping Experience! 🛍️🔋
